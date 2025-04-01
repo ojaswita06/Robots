@@ -10,7 +10,7 @@ class PublisherNode(Node):
 
     def publish_message(self):
         msg = String()
-        msg.data = "Hello ROS2"
+        msg.data = "Hello"
         self.pub.publish(msg)
         self.get_logger().info(f'Publishing: {msg.data}')
 
